@@ -6,6 +6,10 @@
 ![Docker Stars](https://img.shields.io/docker/stars/kybber/traefik-domeneshop)
 ![Docker Pulls](https://img.shields.io/docker/pulls/kybber/traefik-domeneshop)
 
+> [!NOTE]
+> **Traefik has had built-in support for Domeneshop since 2021. There is no need to use this outdated solution.
+
+
 This docker image amends the official [Traefik](https://hub.docker.com/_/traefik) image to enable LetsEncrypt [DNS challenges](https://docs.traefik.io/user-guides/docker-compose/acme-dns/) for [Domeneshop](https://domene.shop/) customers. 
 
 The challenge is performed by a Python script, which means that the dnsChallenge [provider](https://docs.traefik.io/v2.0/https/acme/#providers) must be set to `exec` ([External Program](https://go-acme.github.io/lego/dns/exec/)).
